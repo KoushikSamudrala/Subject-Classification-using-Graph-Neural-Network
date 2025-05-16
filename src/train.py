@@ -55,7 +55,8 @@ def main():
     all_preds = np.empty(num_nodes, dtype=int)
     all_true = np.empty(num_nodes, dtype=int)
     fold_accuracies = []
-
+    
+    # For each fold: train on 9 folds, test on 1 fold (out-of-fold prediction)
     for fold, (train_idx, test_idx) in enumerate(kf.split(indices)):
         print(f"\nFold {fold+1}/10")
         train_mask = get_mask(train_idx, num_nodes)
