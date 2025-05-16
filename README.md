@@ -3,7 +3,7 @@ Cora dataset node classification using Graph Neural networks
 
 
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C.svg?logo=pytorch)](https://pytorch.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 This repository implements a Graph Convolutional Network (GCN) to classify scientific papers in the Cora dataset. The solution strictly follows the task requirements of 10-fold cross-validation with out-of-fold predictions.
 
