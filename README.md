@@ -57,10 +57,26 @@ cd Subject-Classification-using-Graph-Neural-Network
 
 ```
 
-### 2. Install Dependencies**
+### 2. Install Dependencies
+## 🐍 Creating a Virtual Environment
+
+It is recommended to use a virtual environment to isolate your project's dependencies.
+
+### ✅ Steps (for macOS/Linux)
+
 ```bash
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 ```
+### ✅ Steps (for Windows)
+```bash
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+```
+💡 Don't forget to activate the environment each time you work on the project!
+
 
 
 ### 3. Download Data(auto-triggered on first run)
@@ -86,9 +102,9 @@ python src/train.py
 
 ```python-repl
 
-Fold 1/10 accuracy: 0.8143
+Fold 1/10 accuracy: 0.8930
 ...
-Overall CV accuracy: 0.8120
+Overall out-of-fold accuracy: 0.8774
 ```
 ---
 
@@ -184,7 +200,7 @@ All predictions are concatenated in all_preds (which is filled only for the test
 
 | Metric               | Value  |
 |----------------------|--------|
-| Cross-Val Accuracy   | 81.2%  |
+| Cross-Val Accuracy   | 87.7%  |
 
 
 **Prediction File Format (`predictions.tsv`):**
